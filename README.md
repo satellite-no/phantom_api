@@ -1,21 +1,21 @@
 # Splunk Phantom SOAR Module
 
 ## Introduction 
-The TMO Phantom module was developed for easy python communication to and from a Splunk Phantom server using it's native API.
+The Phantom module was developed for easy python communication to and from a Splunk Phantom server using it's native API.
 
 ## Getting Started
 1.  Clone the repository to your local computer
-2.  Copy the "tmo_phantom" folder to */lib/site-packages* (C:\Users\FRODO\AppData\Local\Programs\Python\Python37-32\Lib\site-packages)
+2.  Copy the "phantom_api" folder to */lib/site-packages* (C:\Users\FRODO\AppData\Local\Programs\Python\Python37-32\Lib\site-packages)
 3.	Software dependencies
 	a. requests (standard python modules)
 4.  Review the documentatoin below on usage.
 
 ## Usage and Test
-To use tmo_phantom import the phantom library to your script and create a phantom server object by calling 'PhanServer' with the base URL and api key
+To use phantom_api import the phantom library to your script and create a phantom server object by calling 'PhanServer' with the base URL and api key
 for paramaters.
 '''
->>> from tmo_phantom import tmo_phantom
->>> ph = tmo_phantom.PhanServer('https://phantom-server.local', '12345678910111213141516')
+>>> from phantom_api import tmo_phantom
+>>> ph = phantom_api.PhanServer('https://phantom-server.local', '12345678910111213141516')
 >>> user = ph.get_user(3)
 >>> container = ph.get_container(7)
 '''
