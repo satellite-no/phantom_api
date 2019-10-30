@@ -14,7 +14,7 @@ The Phantom module was developed for easy python communication to and from a Spl
 To use phantom_api import the phantom library to your script and create a phantom server object by calling 'PhanServer' with the base URL and api key
 for paramaters.
 '''
->>> from phantom_api import tmo_phantom
+>>> from phantom_api import phantom_api
 >>> ph = phantom_api.PhanServer('https://phantom-server.local', '12345678910111213141516')
 >>> user = ph.get_user(3)
 >>> container = ph.get_container(7)
